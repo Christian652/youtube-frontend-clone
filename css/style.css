@@ -1,0 +1,46 @@
+.side-nav {
+    width: 250px; 
+    height: 100vh; 
+    position: fixed; 
+    z-index: 1000;
+    margin-left: -260px;
+    transition: margin 0.4s;
+    box-shadow: 2px 0px 10px grey;
+    background: rgba(0,0,0,0.8);
+}
+
+.side-nav ul {
+    color: white;
+}
+
+.side-nav ul li {
+    padding: 10px 30px;
+}
+
+.side-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.side-nav ul li:hover {
+    background: rgb(120, 120, 120);
+}
+
+.side-nav.toggled {
+    margin-left: 0px;
+}
+
+@media (max-width: 768px) {
+    .side-nav {
+        width: 100vw !important;
+        margin-left: -102vw;
+    }
+}
+
+.big-menu {
+    display: none;
+}
+
+.big-menu.toggled {
+    display: block;
+}
+
